@@ -13,7 +13,12 @@ export const Route = createRootRoute({
         content: "width=device-width, initial-scale=1",
       },
       {
-        title: "TanStack Start Starter",
+        title: "Marc Feinberg | Christian High-Performance Coach",
+      },
+      {
+        name: "description",
+        content:
+          "Christian high-performance coaching, business and life coaching, books, speaking, and mastermind facilitation for athletes, entrepreneurs, and purpose-driven leaders.",
       },
     ],
     links: [

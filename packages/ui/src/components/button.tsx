@@ -1,5 +1,6 @@
 import * as React from "react"
-import { cva, type VariantProps } from "class-variance-authority"
+import { cva } from "class-variance-authority"
+import type { VariantProps } from "class-variance-authority"
 import { Slot } from "radix-ui"
 
 import { cn } from "@workspace/ui/lib/utils"
@@ -11,7 +12,7 @@ const buttonVariants = cva(
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/80",
         outline:
-          "border-border bg-background hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50",
+          "border-border bg-background hover:border-primary/45 hover:bg-primary/12 hover:text-foreground aria-expanded:border-primary/45 aria-expanded:bg-primary/12 aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:border-primary/45 dark:hover:bg-primary/20",
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-[color-mix(in_oklch,var(--secondary),var(--foreground)_5%)] aria-expanded:bg-secondary aria-expanded:text-secondary-foreground",
         ghost:
