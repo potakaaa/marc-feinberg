@@ -5,6 +5,11 @@ export const site = {
   phoneHref: "tel:+15613091334",
   address: "2007 Cove Lane NBP, FL 33408",
   assets: "/assets/marc",
+  analytics: {
+    provider: "plausible",
+    domain: "marcfeinberg.com",
+    script: "https://plausible.io/js/script.js",
+  },
 }
 
 export const navItems = [
@@ -100,37 +105,37 @@ export const testimonials = [
     name: "Evander Holyfield",
     role: "5X Heavyweight Champion",
     image: `${site.assets}/testimonial-evander.jpg`,
-    url: "https://www.youtube.com/results?search_query=Marc+Feinberg+Evander+Holyfield",
+    url: "https://www.youtube.com/watch?v=Jw3kQg8Q3sg&t=6s",
   },
   {
     name: "Shannon Briggs",
     role: "2X Heavyweight Champion",
     image: `${site.assets}/testimonial-shannon.jpg`,
-    url: "https://www.youtube.com/results?search_query=Marc+Feinberg+Shannon+Briggs",
+    url: "https://www.youtube.com/watch?v=z8yDajqhrBU&t=32s",
   },
   {
     name: "Henry Tillman",
     role: "Olympic Heavyweight Gold Medalist",
     image: `${site.assets}/testimonial-henry.jpg`,
-    url: "https://www.youtube.com/results?search_query=Marc+Feinberg+Henry+Tillman",
+    url: "https://www.youtube.com/watch?v=N39saWdaBr0",
   },
   {
     name: "Pastor Kevin Jackson",
     role: "Best Selling Author",
     image: `${site.assets}/testimonial-kevin.jpg`,
-    url: "https://www.youtube.com/results?search_query=Marc+Feinberg+Pastor+Kevin+Jackson",
+    url: "https://www.youtube.com/watch?v=_Lp_VW6zr88",
   },
   {
     name: "Natalia Maldonado",
     role: "Lifestyle Entrepreneur",
     image: `${site.assets}/testimonial-natalia.jpg`,
-    url: "https://www.youtube.com/results?search_query=Marc+Feinberg+Natalia+Maldonado",
+    url: "https://www.youtube.com/watch?v=i_cLPK9u-U8",
   },
   {
     name: "Debra Kagan",
     role: "Womens Mojo Specialist",
     image: `${site.assets}/testimonial-debra.jpg`,
-    url: "https://www.youtube.com/results?search_query=Marc+Feinberg+Debra+Kagan",
+    url: "https://www.youtube.com/watch?v=WZgi9mxViho",
   },
 ]
 

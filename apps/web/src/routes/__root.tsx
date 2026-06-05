@@ -2,6 +2,8 @@ import { HeadContent, Scripts, createRootRoute } from "@tanstack/react-router"
 
 import appCss from "@workspace/ui/globals.css?url"
 
+import { site } from "../content"
+
 export const Route = createRootRoute({
   head: () => ({
     meta: [
@@ -25,6 +27,13 @@ export const Route = createRootRoute({
       {
         rel: "stylesheet",
         href: appCss,
+      },
+    ],
+    headScripts: [
+      {
+        src: site.analytics.script,
+        defer: true,
+        "data-domain": site.analytics.domain,
       },
     ],
   }),
