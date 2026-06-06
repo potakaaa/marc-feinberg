@@ -5,13 +5,37 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@w
 import { Button } from "@workspace/ui/components/button"
 
 import { faqs, site } from "../content"
+import { JsonLd, seoHead } from "../seo"
 import { ContactStrip, CtaButton, PageHero, Section, SiteShell } from "../site-components"
 
-export const Route = createFileRoute("/contact")({ component: ContactPage })
+export const Route = createFileRoute("/contact")({
+  head: () =>
+    seoHead({
+      title: "Contact Marc Feinberg | Book a Free Coaching Call",
+      description:
+        "Contact Marc Feinberg or schedule a free call to discuss high-performance coaching, Christian business and life coaching, speaking, or mastermind facilitation.",
+      path: "/contact",
+    }),
+  component: ContactPage,
+})
 
 function ContactPage() {
   return (
     <SiteShell>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: faq.answer,
+            },
+          })),
+        }}
+      />
       <PageHero
         eyebrow="Start the conversation"
         title="The first step is a free call."

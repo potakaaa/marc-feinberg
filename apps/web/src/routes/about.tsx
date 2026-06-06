@@ -2,9 +2,19 @@ import { createFileRoute } from "@tanstack/react-router"
 import { IconCheck } from "@tabler/icons-react"
 
 import { site } from "../content"
+import { seoHead } from "../seo"
 import { CtaButton, FinalCta, PageHero, Section, SiteShell } from "../site-components"
 
-export const Route = createFileRoute("/about")({ component: AboutPage })
+export const Route = createFileRoute("/about")({
+  head: () =>
+    seoHead({
+      title: "About Marc Feinberg | Coach, Author & Speaker",
+      description:
+        "Meet Marc Feinberg, a Christian high-performance coach, author, speaker, personal advisor, mastermind facilitator, and certified biblical counselor.",
+      path: "/about",
+    }),
+  component: AboutPage,
+})
 
 function AboutPage() {
   return (

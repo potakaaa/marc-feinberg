@@ -6,6 +6,7 @@ import { Button } from "@workspace/ui/components/button"
 import { Spotlight } from "@workspace/ui/components/spotlight-new"
 
 import { site } from "../content"
+import { seoHead } from "../seo"
 import {
   BlogGrid,
   BookGrid,
@@ -21,7 +22,16 @@ import {
   WhyCards,
 } from "../site-components"
 
-export const Route = createFileRoute("/")({ component: App })
+export const Route = createFileRoute("/")({
+  head: () =>
+    seoHead({
+      title: "Marc Feinberg | Christian High-Performance Coach",
+      description:
+        "Marc Feinberg is a Christian high-performance coach, author, speaker, and advisor helping athletes, entrepreneurs, and leaders achieve purpose-driven results.",
+      path: "/",
+    }),
+  component: App,
+})
 
 function App() {
   return (

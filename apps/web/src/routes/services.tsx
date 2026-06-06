@@ -1,9 +1,20 @@
 import { createFileRoute } from "@tanstack/react-router"
 
 import { site } from "../content"
+import { seoHead } from "../seo"
 import { FinalCta, PageHero, Section, ServiceCards, SiteShell, WhyCards } from "../site-components"
 
-export const Route = createFileRoute("/services")({ component: ServicesPage })
+export const Route = createFileRoute("/services")({
+  head: () =>
+    seoHead({
+      title: "Coaching & Speaking Services | Marc Feinberg",
+      description:
+        "Explore high-performance coaching, Christian life and business coaching, mastermind facilitation, sales training, and keynote speaking with Marc Feinberg.",
+      path: "/services",
+      image: `${site.assets}/mastermind.gif`,
+    }),
+  component: ServicesPage,
+})
 
 function ServicesPage() {
   return (

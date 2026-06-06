@@ -1,4 +1,6 @@
 export const site = {
+  url: "https://marcfeinberg.com",
+  name: "Marc Feinberg",
   calendly: "https://calendly.com/marcfeinberg",
   email: "marc@marcfeinberg.com",
   phoneDisplay: "561-309-1334",

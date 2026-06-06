@@ -1,8 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router"
 
 import { BlogGrid, FinalCta, PageHero, Section, SiteShell } from "../site-components"
+import { seoHead } from "../seo"
 
-export const Route = createFileRoute("/blog")({ component: BlogPage })
+export const Route = createFileRoute("/blog")({
+  head: () =>
+    seoHead({
+      title: "Insights by Marc Feinberg | Faith & Performance",
+      description:
+        "Read Marc Feinberg's insights on Christian faith, high performance, leadership, mindset, business coaching, discipline, and purpose.",
+      path: "/blog",
+    }),
+  component: BlogPage,
+})
 
 function BlogPage() {
   return (
