@@ -206,6 +206,7 @@ export const blogPosts = [
     category: "Performance",
     date: "June 12, 2025",
     image: `${site.assets}/mastermind.gif`,
+    imagePosition: "50% 38%",
     excerpt:
       "Success is not accidental. Leaders need a clear blueprint, disciplined direction, and the right accountability to move toward what matters.",
   },
@@ -214,6 +215,7 @@ export const blogPosts = [
     category: "Mindset",
     date: "June 12, 2025",
     image: `${site.assets}/marc-portrait.jpeg`,
+    imagePosition: "50% 10%",
     excerpt:
       "Clarity begins when you define what you truly want, then build the courage and discipline to make aligned decisions.",
   },
@@ -222,6 +224,7 @@ export const blogPosts = [
     category: "Leadership",
     date: "June 12, 2025",
     image: `${site.assets}/evander-holyfield-2.jpg`,
+    imagePosition: "50% 42%",
     excerpt:
       "Performance rises when identity is clear. Who you believe you are shapes what you tolerate, pursue, and build.",
   },
@@ -230,6 +233,7 @@ export const blogPosts = [
     category: "Faith",
     date: "June 12, 2025",
     image: `${site.assets}/nick-vujicic.jpg`,
+    imagePosition: "50% 45%",
     excerpt:
       "A mission-minded life brings focus to daily choices and creates a stronger foundation for leadership, family, and legacy.",
   },
@@ -238,6 +242,7 @@ export const blogPosts = [
     category: "Faith",
     date: "June 12, 2025",
     image: `${site.assets}/robert-karlsson.webp`,
+    imagePosition: "50% 28%",
     excerpt:
       "Purpose is not vague inspiration. It is the organizing force that helps leaders make better decisions and move with conviction.",
   },
@@ -246,6 +251,7 @@ export const blogPosts = [
     category: "Coaching",
     date: "June 7, 2025",
     image: `${site.assets}/testimonial-lisa.jpg`,
+    imagePosition: "50% 50%",
     excerpt:
       "The right outside perspective can help you see the patterns, beliefs, and decisions that are limiting your next level.",
   },

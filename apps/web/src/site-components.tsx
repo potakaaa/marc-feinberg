@@ -459,8 +459,14 @@ export function BlogGrid({ limit }: { limit?: number }) {
   return (
     <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
       {blogPosts.slice(0, limit).map((post) => (
-        <Card key={post.title} className="border border-border bg-card">
-          <img className="aspect-[16/10] w-full object-cover" src={post.image} alt="" loading="lazy" />
+        <Card key={post.title} className="overflow-hidden border border-border bg-card">
+          <img
+            className="aspect-[16/10] w-full object-cover"
+            src={post.image}
+            alt=""
+            loading="lazy"
+            style={{ objectPosition: post.imagePosition }}
+          />
           <CardContent className="p-5">
             <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-wider text-bronze">
               <span>{post.category}</span>
