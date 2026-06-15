@@ -67,7 +67,7 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/88 backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center">
-          <img className="h-12 w-auto sm:h-14" src={`${site.assets}/logo.png`} alt="Marc Feinberg Founder" />
+          <img className="h-12 w-auto sm:h-14" src={`${site.assets}/logo.png`} alt="Marc Feinberg" width={1024} height={341} />
         </Link>
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary navigation">
           {navItems.map((item) => (
@@ -125,7 +125,7 @@ export function Footer() {
     <footer className="border-t border-border bg-charcoal text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.2fr_0.8fr_0.8fr] lg:px-8">
         <div>
-          <img className="h-14 w-auto rounded bg-white px-3 py-2" src={`${site.assets}/logo.png`} alt="Marc Feinberg Founder" />
+          <img className="h-14 w-auto rounded bg-white px-3 py-2" src={`${site.assets}/logo.png`} alt="Marc Feinberg" width={1024} height={341} />
           <p className="mt-5 max-w-md text-sm leading-7 text-white/70">
             High-performance coaching, biblical wisdom, and practical accountability for purpose-driven leaders who are ready to execute.
           </p>
@@ -198,19 +198,23 @@ export function PageHero({
   intro,
   image,
   alt,
+  headingLevel = "h1",
 }: {
   eyebrow: string
   title: string
   intro: string
   image?: string
   alt?: string
+  headingLevel?: "h1" | "h2"
 }) {
+  const Heading = headingLevel
+
   return (
     <section className="bg-warm px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
       <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1fr_0.8fr]">
         <div>
           <Badge variant="outline" className="border-primary/25 bg-primary/10 text-bronze">{eyebrow}</Badge>
-          <h1 className="mt-5 max-w-4xl text-4xl font-semibold tracking-tight text-balance sm:text-5xl lg:text-6xl">{title}</h1>
+          <Heading className="mt-5 max-w-4xl text-4xl font-semibold tracking-tight text-balance sm:text-5xl lg:text-6xl">{title}</Heading>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">{intro}</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <CtaButton />
@@ -221,7 +225,7 @@ export function PageHero({
         </div>
         {image && (
           <div className="overflow-hidden rounded-2xl border border-border bg-white shadow-xl shadow-black/5">
-            <img className="aspect-[4/3] w-full object-cover" src={image} alt={alt ?? ""} />
+            <img className="aspect-[4/3] w-full object-cover" src={image} alt={alt ?? ""} width={1200} height={900} />
           </div>
         )}
       </div>
@@ -459,23 +463,31 @@ export function BlogGrid({ limit }: { limit?: number }) {
   return (
     <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
       {blogPosts.slice(0, limit).map((post) => (
-        <Card key={post.title} className="overflow-hidden border border-border bg-card">
-          <img
-            className="aspect-[16/10] w-full object-cover"
-            src={post.image}
-            alt=""
-            loading="lazy"
-            style={{ objectPosition: post.imagePosition }}
-          />
-          <CardContent className="p-5">
-            <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-wider text-bronze">
-              <span>{post.category}</span>
-              <span className="text-muted-foreground">{post.date}</span>
-            </div>
-            <h3 className="mt-3 text-xl font-semibold leading-snug">{post.title}</h3>
-            <p className="mt-3 text-sm leading-7 text-muted-foreground">{post.excerpt}</p>
-          </CardContent>
-        </Card>
+        <Link key={post.title} to="/blog/$slug" params={{ slug: post.slug }} className="group rounded-xl focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-ring/50">
+          <Card className="h-full overflow-hidden border border-border bg-card transition group-hover:-translate-y-1 group-hover:shadow-xl group-hover:shadow-black/5">
+            <img
+              className="aspect-[16/10] w-full object-cover transition group-hover:scale-105"
+              src={post.image}
+              alt={`${post.title} article image`}
+              loading="lazy"
+              width={960}
+              height={600}
+              style={{ objectPosition: post.imagePosition }}
+            />
+            <CardContent className="p-5">
+              <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-wider text-bronze">
+                <span>{post.category}</span>
+                <span className="text-muted-foreground">{post.date}</span>
+              </div>
+              <h3 className="mt-3 text-xl font-semibold leading-snug">{post.title}</h3>
+              <p className="mt-3 text-sm leading-7 text-muted-foreground">{post.excerpt}</p>
+              <p className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-bronze">
+                Read Article
+                <IconArrowRight data-icon="inline-end" />
+              </p>
+            </CardContent>
+          </Card>
+        </Link>
       ))}
     </div>
   )

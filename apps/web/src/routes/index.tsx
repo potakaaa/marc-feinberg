@@ -44,7 +44,7 @@ function App() {
               Faith-driven performance coaching
             </Badge>
             <h1 className="mt-6 max-w-3xl text-4xl font-semibold tracking-tight text-balance sm:text-6xl lg:text-7xl">
-              High-Performance Coaching for Purpose-Driven Leaders
+              Marc Feinberg: High-Performance Coaching for Purpose-Driven Leaders
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/75">
               Marc Feinberg helps professional athletes, entrepreneurs, and world-class leaders break through performance ceilings with faith, focus, accountability, and practical execution.
@@ -77,6 +77,9 @@ function App() {
               className="relative aspect-[4/5] w-full rounded-3xl border border-white/10 object-cover shadow-2xl shadow-black/30"
               src={`${site.assets}/marc-portrait.jpeg`}
               alt="Marc Feinberg in a suit standing by a car"
+              width={1024}
+              height={1280}
+              fetchPriority="high"
             />
           </div>
         </div>
@@ -128,6 +131,7 @@ function App() {
         intro="Marc is a high-performance coach, certified biblical counselor, author, keynote speaker, mastermind facilitator, sales trainer, and personal advisor to high-achieving athletes and entrepreneurs."
         image={`${site.assets}/evander-holyfield-2.jpg`}
         alt="Marc Feinberg with Evander Holyfield"
+        headingLevel="h2"
       />
       <Section eyebrow="Books" title="Wisdom you can apply beyond the call." intro="Marc’s books extend his coaching principles into faith, family, money, leadership, freedom, and personal growth.">
         <BookGrid limit={3} />

@@ -1,7 +1,9 @@
 {
   "short_name": "Marc Feinberg",
   "name": "Marc Feinberg | Christian High-Performance Coach",
-  "description": "Christian high-performance coaching for athletes, entrepreneurs, and purpose-driven leaders.",
+  "description": "Marc Feinberg is a Christian high-performance coach, author, speaker, and advisor helping athletes, entrepreneurs, and leaders achieve purpose-driven results.",
+  "id": "/",
+  "scope": "/",
   "icons": [
     {
       "src": "favicon.ico",
