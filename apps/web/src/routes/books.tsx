@@ -9,9 +9,9 @@ export const Route = createFileRoute("/books")({
     seoHead({
       title: "Books by Marc Feinberg | Faith, Wisdom & Growth",
       description:
-        "Browse books by Marc Feinberg about biblical wisdom, family, leadership, business, money, freedom, addiction recovery, and personal growth.",
+        "Browse books by Marc Feinberg about biblical wisdom, parenting, teens, money, freedom, and personal growth.",
       path: "/books",
-      image: `${site.assets}/book-31-wise.webp`,
+      image: `${site.assets}/book-wisdom-journal-cover.jpg`,
     }),
   component: BooksPage,
 })
@@ -41,9 +41,9 @@ function BooksPage() {
       <PageHero
         eyebrow="Books"
         title="Books by Marc Feinberg"
-        intro="Wisdom, freedom, power, and purpose in practical resources for faith, family, leadership, business, money, and personal growth."
-        image={`${site.assets}/book-31-wise.webp`}
-        alt="31 WISE book cover"
+        intro="Wisdom, freedom, power, and purpose in practical resources for faith, family, teens, money, and personal growth."
+        image={`${site.assets}/book-wisdom-journal-cover.jpg`}
+        alt="The Wisdom Journal book cover"
       />
       <Section eyebrow="Library" title="Apply Marc’s principles one page at a time.">
         <BookGrid />

@@ -148,17 +148,33 @@ export const testimonials = [
   },
 ]
 
-const bookAssetVersion = "2026-06-15-2"
+const bookAssetVersion = "2026-06-15-4"
 const bookAsset = (filename: string) => `${site.assets}/${filename}?v=${bookAssetVersion}`
 
 export const books = [
   {
-    title: "31 WISE",
-    subtitle: "31 Proverbs. 31 Days. The W.I.S.E. Method.",
-    image: bookAsset("book-31-wise.webp"),
+    title: "The Wisdom Journal",
+    subtitle: "31 Proverbs. 31 Days. Wisdom for life.",
+    image: bookAsset("book-wisdom-journal-cover.jpg"),
     description:
-      "A daily Proverbs journal for unlocking God’s wisdom across faith, family, fitness, finance, and personal growth.",
-    url: "https://www.amazon.com/31-WISE-Marc-Feinberg/dp/B09PHBV1RH",
+      "A daily Proverbs journal for turning reflection into practical wisdom, faith, and life application.",
+    url: "https://www.amazon.com/Wisdom-Journal-Proverbs-Days-Life/dp/B08KM829RJ",
+  },
+  {
+    title: "The Wisdom Journal For Parents",
+    subtitle: "31 Proverbs. 31 Days. Wisdom for parents.",
+    image: bookAsset("book-wisdom-journal-parents.jpg"),
+    description:
+      "A parent-focused Proverbs journal for building wisdom, clarity, and faith-centered leadership at home.",
+    url: "https://www.amazon.com/Wisdom-Journal-Parents-Days-31-Proverbs-Wisdom/dp/B0DQJ7QJVS",
+  },
+  {
+    title: "The Wisdom Journal For Teens",
+    subtitle: "31 Proverbs. 31 Days. Wisdom for teens.",
+    image: bookAsset("book-wisdom-journal-teens.jpg"),
+    description:
+      "A teen-focused Proverbs journal for growing in wisdom, confidence, character, and daily direction.",
+    url: "https://www.amazon.com/Wisdom-Journal-Teens-Proverbs-31-Days-Wisdom/dp/B0DQ4K9DBK",
   },
   {
     title: "The Dream Teen",
@@ -169,28 +185,12 @@ export const books = [
     url: "https://www.amazon.com/Dream-Teen-CONNECTED-CONFIDENT-Extraordinary/dp/B0DNW5T35H",
   },
   {
-    title: "The Wisdom Journal for Small Groups",
-    subtitle: "Bible study meets breakthrough mastermind.",
-    image: bookAsset("book-a-myth.webp"),
+    title: "Debt Settlement's Dirty Little Secrets",
+    subtitle: "Exposing the truth. Protecting your wallet.",
+    image: bookAsset("book-wisdom-journal.png"),
     description:
-      "A guided journal for small groups that turns Proverbs into practical discussion, reflection, and application.",
-    url: "https://www.amazon.com/Wisdom-Journal-Small-Groups-Proverbs/dp/B09CRQDCDZ",
-  },
-  {
-    title: "The Secret Money Pill",
-    subtitle: "Prescriptions for designing a debt-free company.",
-    image: bookAsset("book-debt-settlement.jpg"),
-    description:
-      "Biblical principles and practical business strategy for resolving debt, improving cash flow, and building with purpose.",
-    url: "https://www.amazon.com/Secret-Money-Pill-Prescriptions-Designing/dp/1507687141",
-  },
-  {
-    title: "The A-Myth",
-    subtitle: "3 simple steps to break free from addiction.",
-    image: bookAsset("book-secret-money-pill.jpg"),
-    description:
-      "A direct, decision-centered guide to breaking destructive patterns and stepping into lasting freedom.",
-    url: "https://www.amazon.com/MYTH-Simple-Break-Free-Addiction-Return/dp/1979175101",
+      "A consumer protection guide that reveals costly debt settlement traps and points toward better options.",
+    url: "https://www.amazon.com/Debt-Settlements-Dirty-Little-Secrets/dp/B0FLXSV3XD",
   },
   {
     title: "Full Power",
@@ -199,14 +199,6 @@ export const books = [
     description:
       "A story-driven guide for transforming pain, resentment, betrayal, and loss into purpose and freedom.",
     url: "https://www.amazon.com/Full-Power-Unforgiveness-Steals-Simple/dp/1978215282",
-  },
-  {
-    title: "Debt Settlement's Dirty Little Secrets",
-    subtitle: "Exposing the truth. Protecting your wallet.",
-    image: bookAsset("book-wisdom-journal.png"),
-    description:
-      "A consumer protection guide that reveals costly debt settlement traps and points toward better options.",
-    url: "https://www.amazon.com/Debt-Settlements-Dirty-Little-Secrets/dp/B0FLXSV3XD",
   },
 ]
 

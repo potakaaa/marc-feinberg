@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router"
+import { createFileRoute, Link } from "@tanstack/react-router"
 import { IconArrowRight, IconCross, IconTargetArrow, IconTrendingUp } from "@tabler/icons-react"
 
 import { Badge } from "@workspace/ui/components/badge"
@@ -87,7 +87,7 @@ function App() {
       <TrustBar />
       <Section
         eyebrow="The gap"
-        title="Successful does not always mean unstuck."
+        title="Success doesn’t always equal freedom."
         intro="Many high achievers have the ambition, résumé, and responsibility, but still need clearer direction, stronger accountability, and a faith-aligned framework for the next level."
       >
         <div className="grid gap-5 md:grid-cols-3">
@@ -135,6 +135,14 @@ function App() {
       />
       <Section eyebrow="Books" title="Wisdom you can apply beyond the call." intro="Marc’s books extend his coaching principles into faith, family, money, leadership, freedom, and personal growth.">
         <BookGrid limit={3} />
+        <div className="mt-8 flex justify-center">
+          <Button asChild variant="outline" className="h-11 rounded-full px-5">
+            <Link to="/books">
+              See More Books
+              <IconArrowRight data-icon="inline-end" />
+            </Link>
+          </Button>
+        </div>
       </Section>
       <Section className="bg-warm" eyebrow="Insights" title="Faith, performance, leadership, and purpose." intro="Static blog content supports authority, SEO, and thoughtful next steps for visitors who are still exploring.">
         <BlogGrid limit={3} />
