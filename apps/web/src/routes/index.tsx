@@ -25,9 +25,9 @@ import {
 export const Route = createFileRoute("/")({
   head: () =>
     seoHead({
-      title: "Marc Feinberg | Christian High-Performance Coach",
+      title: "Marc Feinberg | High-Performance Coach",
       description:
-        "Marc Feinberg is a Christian high-performance coach, author, speaker, and advisor helping athletes, entrepreneurs, and leaders achieve purpose-driven results.",
+        "Marc Feinberg is a high-performance coach, author, speaker, and advisor helping athletes, entrepreneurs, and leaders achieve purpose-driven results.",
       path: "/",
     }),
   component: App,
@@ -41,13 +41,13 @@ function App() {
         <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1fr_0.9fr]">
           <div>
             <Badge className="bg-white/10 text-primary ring-1 ring-white/10" variant="outline">
-              Faith-driven performance coaching
+              High-performance coaching
             </Badge>
             <h1 className="mt-6 max-w-3xl text-4xl font-semibold tracking-tight text-balance sm:text-6xl lg:text-7xl">
               Marc Feinberg: High-Performance Coaching for Purpose-Driven Leaders
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/75">
-              Marc Feinberg helps professional athletes, entrepreneurs, and world-class leaders break through performance ceilings with faith, focus, accountability, and practical execution.
+              Marc Feinberg helps professional athletes, entrepreneurs, and world-class leaders break through performance ceilings with focus, accountability, and practical execution.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <CtaButton />

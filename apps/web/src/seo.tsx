@@ -29,7 +29,7 @@ export function seoHead({
       { property: "og:description", content: description },
       { property: "og:url", content: url },
       { property: "og:image", content: absoluteImage },
-      { property: "og:image:alt", content: "Marc Feinberg, Christian high-performance coach" },
+      { property: "og:image:alt", content: "Marc Feinberg, high-performance coach" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "1200" },
       { name: "twitter:card", content: "summary_large_image" },

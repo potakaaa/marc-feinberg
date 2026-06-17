@@ -10,7 +10,7 @@ export const Route = createFileRoute("/about")({
     seoHead({
       title: "About Marc Feinberg | Coach, Author & Speaker",
       description:
-        "Meet Marc Feinberg, a Christian high-performance coach, author, speaker, personal advisor, mastermind facilitator, and certified biblical counselor.",
+        "Meet Marc Feinberg, a high-performance coach, author, speaker, personal advisor, mastermind facilitator, and certified biblical counselor.",
       path: "/about",
     }),
   component: AboutPage,

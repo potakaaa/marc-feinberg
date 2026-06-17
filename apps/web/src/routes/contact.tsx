@@ -13,7 +13,7 @@ export const Route = createFileRoute("/contact")({
     seoHead({
       title: "Contact Marc Feinberg | Book a Free Coaching Call",
       description:
-        "Contact Marc Feinberg or schedule a free call to discuss high-performance coaching, Christian business and life coaching, speaking, or mastermind facilitation.",
+        "Contact Marc Feinberg or schedule a free call to discuss high-performance coaching, life and business coaching, speaking, or mastermind facilitation.",
       path: "/contact",
     }),
   component: ContactPage,

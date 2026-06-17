@@ -103,14 +103,14 @@ function RootDocument({ children }: { children: React.ReactNode }) {
                 telephone: "+1-561-309-1334",
                 mainEntityOfPage: site.url,
                 jobTitle: [
-                  "Christian High-Performance Coach",
+                  "High-Performance Coach",
                   "Author",
                   "Keynote Speaker",
                   "Certified Biblical Counselor",
                 ],
                 description: site.description,
                 knowsAbout: [
-                  "Christian high-performance coaching",
+                  "High-performance coaching",
                   "Business coaching",
                   "Life coaching",
                   "Biblical counseling",

@@ -8,7 +8,7 @@ export const Route = createFileRoute("/blog")({
     seoHead({
       title: "Insights by Marc Feinberg | Faith & Performance",
       description:
-        "Read Marc Feinberg's insights on Christian faith, high performance, leadership, mindset, business coaching, discipline, and purpose.",
+        "Read Marc Feinberg's insights on faith, high performance, leadership, mindset, business coaching, discipline, and purpose.",
       path: "/blog",
     }),
   component: BlogPage,

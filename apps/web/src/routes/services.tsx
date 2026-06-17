@@ -9,7 +9,7 @@ export const Route = createFileRoute("/services")({
     seoHead({
       title: "Coaching & Speaking Services | Marc Feinberg",
       description:
-        "Explore high-performance coaching, Christian life and business coaching, mastermind facilitation, sales training, and keynote speaking with Marc Feinberg.",
+        "Explore high-performance coaching, life and business coaching, mastermind facilitation, sales training, and keynote speaking with Marc Feinberg.",
       path: "/services",
       image: `${site.assets}/mastermind.gif`,
     }),

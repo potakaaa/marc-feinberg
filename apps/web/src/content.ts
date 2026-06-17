@@ -1,9 +1,9 @@
 export const site = {
   url: "https://marcfeinberg.com",
   name: "Marc Feinberg",
-  title: "Marc Feinberg | Christian High-Performance Coach",
+  title: "Marc Feinberg | High-Performance Coach",
   description:
-    "Marc Feinberg is a Christian high-performance coach, author, speaker, and advisor helping athletes, entrepreneurs, and leaders achieve purpose-driven results.",
+    "Marc Feinberg is a high-performance coach, author, speaker, and advisor helping athletes, entrepreneurs, and leaders achieve purpose-driven results.",
   calendly: "https://calendly.com/marcfeinberg",
   email: "marc@marcfeinberg.com",
   phoneDisplay: "561-309-1334",
@@ -30,7 +30,7 @@ export const navItems = [
 ]
 
 export const trustItems = [
-  "Christian Life & Business Coach",
+  "High-Performance Coach",
   "High-Performance Advisor",
   "Author & Speaker",
   "Mastermind Facilitator",
@@ -46,8 +46,8 @@ export const services = [
     outcomes: ["Clearer targets", "Stronger discipline", "Consistent execution"],
   },
   {
-    title: "Christian Life & Business Coaching",
-    shortTitle: "Christian Life & Business Coaching",
+    title: "Life & Business Coaching",
+    shortTitle: "Life & Business Coaching",
     description:
       "Faith-aligned coaching for leaders who want wisdom, purpose, and practical direction across life, business, relationships, and legacy.",
     outcomes: ["Purpose alignment", "Biblical wisdom", "Confident decisions"],
@@ -315,7 +315,7 @@ export const faqs = [
   {
     question: "Is the coaching faith-based?",
     answer:
-      "Marc’s work is grounded in Christian principles and biblical wisdom, while staying practical, direct, and focused on real-life performance and leadership outcomes.",
+      "Marc’s work is grounded in biblical principles and practical wisdom, while staying direct and focused on real-life performance and leadership outcomes.",
   },
   {
     question: "Do you work with teams or organizations?",
