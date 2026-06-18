@@ -424,6 +424,11 @@ export function TestimonialGrid({ limit }: { limit?: number }) {
               </div>
               <h3 className="mt-5 text-xl font-semibold">{testimonial.name}</h3>
               <p className="mt-1 text-sm text-muted-foreground">{testimonial.role}</p>
+              {testimonial.quote && (
+                <blockquote className="mt-3 border-l-2 border-primary/40 pl-3 text-sm italic text-foreground/80">
+                  “{testimonial.quote}”
+                </blockquote>
+              )}
             </CardContent>
           </Card>
         </ExternalLink>

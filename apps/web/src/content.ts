@@ -115,36 +115,42 @@ export const testimonials = [
     role: "5X Heavyweight Champion",
     image: `${site.assets}/testimonial-evander.jpg`,
     url: "https://www.youtube.com/watch?v=Jw3kQg8Q3sg&t=6s",
+    quote: "Coach Marc is the real deal.",
   },
   {
     name: "Shannon Briggs",
     role: "2X Heavyweight Champion",
     image: `${site.assets}/testimonial-shannon.jpg`,
     url: "https://www.youtube.com/watch?v=z8yDajqhrBU&t=32s",
+    quote: "This is the man to meet, Coach Marc.",
   },
   {
     name: "Henry Tillman",
     role: "Olympic Heavyweight Gold Medalist",
     image: `${site.assets}/testimonial-henry.jpg`,
     url: "https://www.youtube.com/watch?v=N39saWdaBr0",
+    quote: "He opened my mind.",
   },
   {
     name: "Pastor Kevin Jackson",
     role: "Best Selling Author",
     image: `${site.assets}/testimonial-kevin.jpg`,
     url: "https://www.youtube.com/watch?v=_Lp_VW6zr88",
+    quote: "You need somebody to help you, and that would be Marc.",
   },
   {
     name: "Natalia Maldonado",
     role: "Lifestyle Entrepreneur",
     image: `${site.assets}/testimonial-natalia.jpg`,
     url: "https://www.youtube.com/watch?v=i_cLPK9u-U8",
+    quote: "He's so accessible, so personal, so loving.",
   },
   {
     name: "Debra Kagan",
     role: "Womens Mojo Specialist",
     image: `${site.assets}/testimonial-debra.jpg`,
     url: "https://www.youtube.com/watch?v=WZgi9mxViho",
+    quote: "He will help to push your envelope so you can achieve your goals.",
   },
 ]
 
